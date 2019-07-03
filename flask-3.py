@@ -9,3 +9,5 @@ def hello(name=None):
 def templetest():
     return  render_template('templetest.html')
     
+if __name__ == '__main__':
+    app.run(debug=True)    
