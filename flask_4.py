@@ -12,4 +12,7 @@ app.add_url_rule("/",'',index)
 
 @app.route("/index")
 def index1():
-    return 'This is the index'
+    return 'This is the index1'
+
+if __name__ == '__main__':
+    app.run(debug=True)     

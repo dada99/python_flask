@@ -5,7 +5,7 @@ app = Flask(__name__)
 def hello():
     return "Hello World!"
 
-@app.route('/projects/') # url with / can be map by /projects/ or /project./ will be added automaticaly
+@app.route('/projects/') # url with / can be map by /projects/ or /project. / will be added automaticaly
 def projects():
     return 'The project page'
 
@@ -27,3 +27,6 @@ def show_post(post_id):
 def show_subpath(subpath):
     # show the subpath after /path/
     return 'Subpath %s' % subpath
+
+if __name__ == '__main__':
+    app.run(debug=True) 

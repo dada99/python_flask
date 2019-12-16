@@ -6,7 +6,7 @@ app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('hello.html')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -19,3 +19,7 @@ def login():
             flash('You were successfully logged in')
             return redirect(url_for('index'))
     return render_template('login.html', error=error)
+
+
+if __name__ == '__main__':
+    app.run(debug=True) 
