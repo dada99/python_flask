@@ -1,4 +1,4 @@
+pylint
 flask>=0.12.3 #Upgrdae flask due to security alter from github:CVE-2018-1000656 
 Flask-SQLAlchemy==1.0
 Flask-WTF==0.9.3
-pylint
