@@ -1,10 +1,10 @@
 #Code from https://realpython.com/python-web-applications-with-flask-part-i/
 from os.path import abspath, dirname, join
 from flask import flash, Flask, Markup, redirect, render_template, url_for
-from flask.ext.sqlalchemy import SQLAlchemy
-from flask.ext.wtf import Form
-from wtforms import fields
-from wtforms.ext.sqlalchemy.fields import QuerySelectField
+from flask_sqlalchemy import SQLAlchemy
+from flask_wtf import Form
+from wtforms import fields,QuerySelectField
+#from wtforms.ext.sqlalchemy.fields import QuerySelectField
 
 _cwd = dirname(abspath(__file__))
 
